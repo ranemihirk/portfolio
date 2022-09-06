@@ -12,6 +12,7 @@ import { TimeComponent } from './time/time.component';
 import { MainComponent } from './main/main.component';
 import { SiteModeComponent } from './site-mode/site-mode.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     AppRoutingModule,
     MatTabsModule,
     NgbModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
