@@ -50,8 +50,8 @@ export class TimeComponent implements OnInit {
 	worldClockStructure() {
 		const data = [
 			{
-				country: "NEW YORK",
-				timeZone: "America/New_York",
+				country: "Toronto",
+				timeZone: "Canada/Eastern",
 				id: "ny"
 			},
 			{
@@ -60,14 +60,14 @@ export class TimeComponent implements OnInit {
 				id: "ldn"
 			},
 			{
-				country: "BANGKOK",
-				timeZone: "Asia/Bangkok",
-				id: "bkk"
+				country: "San Fransisco",
+				timeZone: "America/Vancouver",
+				id: "sfa"
 			},
 			{
-				country: "TAIWAN",
-				timeZone: "Asia/Taipei",
-				id: "tpe"
+				country: "Dublin",
+				timeZone: "Europe/Dublin",
+				id: "dbl"
 			},
 			{
 				country: "SYDNEY",

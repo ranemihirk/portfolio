@@ -61,9 +61,9 @@ button {
 /* Time Component Style */
 
 .global-time{
-    flex: 20%;
-    max-width: 20%;
-    padding: 25px;
+    flex: 50%;
+    max-width: 50%;
+    padding: 15px;
 }
 .global-time h3, .global-time h5, .global-time p{
     text-align: center;
@@ -78,8 +78,39 @@ button {
 .global-time p{
     font-weight: 700;
     margin: 0;
+    text-transform: uppercase;
 }
 
 /* Time Component Style --END-- */
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@media (max-width:300px)  { 
+    /* fold devices */
+    .global-time{
+        flex: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { 
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    .global-time{
+        flex: 33.33%;
+        max-width: 33.33%;
+        padding: 20px;
+    }
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { 
+    /* hi-res laptops and desktops */ 
+    .global-time{
+        flex: 20%;
+        max-width: 20%;
+        padding: 25px;
+    }
+}
