@@ -3,35 +3,64 @@
     // top: 0;
     // left: 0; */
     width: 100%;
-    height: 100vh;
-    padding: 25px 0;
+
     display: flex;
     /* // align-items: center; */
     justify-content: center;
     flex-wrap: wrap;
     background-color: #2A2438;
     position: relative;
+    padding: 8px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(42,36,56,.8);
+    backdrop-filter: blur(5px);
+    -webkit-box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
 }
 
-.header-logo-wrap{
+.main-header-desktop .header-logo-wrap{
     /* // display: inline-block;
     // padding: 25px; */
     width: 100%;
     text-align: center;
 }
-.header-logo-inner-wrap{
+.main-header-desktop .header-logo-inner-wrap{
     background-color: #dbd8e3;
     padding: 15px;
     display: inline-block;
 }
-.header-logo{
+.main-header-desktop .header-logo{
     border: 5px solid #2A2438;
     width: 150px;
 }
-.header-logo-nottop{
+.main-header-desktop .header-logo-nottop{
     height: 70px;
     object-fit: cover;
     object-position: center;
+}
+
+
+.main-header-phone .header-logo-wrap{
+  /* // display: inline-block;
+  // padding: 25px; */
+  width: 100%;
+  text-align: center;
+}
+.main-header-phone .header-logo-inner-wrap{
+  background-color: #dbd8e3;
+  padding: 2.5px;
+  display: inline-block;
+}
+.main-header-phone .header-logo{
+  border: 5px solid #2A2438;
+  width: 80px;
+}
+.main-header-phone .header-logo-nottop{
+  height: 70px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .header-menu-wrap{
@@ -96,10 +125,51 @@
 }
 .scroll-top-arrow{
     position: fixed;
-    bottom: 25px;
+    bottom: 60px;
     right: 25px;
     height: 20px;
     width: 20px;
-    background-color: #000;
     z-index: 5;
+}
+
+.main-header-desktop{
+  display: none;
+  height: 100vh;
+  padding: 25px 0;
+}
+
+
+@media (max-width:300px)  {
+  /* fold devices */
+
+}
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
+  .main-header{
+    padding: 0;
+    position: relative;
+    left: null;
+    top: null;
+    background-color: #2A2438;
+  }
+  .main-header-desktop{
+    display: flex;
+  }
+  .main-header-phone{
+    display: none;
+  }
+  .header-logo-wrap{
+    margin-top: 25px;
+  }
+  .scroll-top-arrow{
+    bottom: 25px;
+  }
 }
