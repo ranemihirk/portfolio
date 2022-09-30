@@ -124,6 +124,10 @@ html{
   flex-wrap: wrap;
   height: fit-content;
   width: 100%;
+  position: fixed;
+  background-color: rgba(255,255,255,.5);
+    backdrop-filter: blur(5px);
+    -webkit-box-shadow: 0 3px 15px rgb(0 0 0 / 20%);
 }
 .social-media-item{
   flex:20%;
@@ -189,6 +193,9 @@ html{
   }
   .social-media-wrap{
     margin-bottom: 8rem;
+    position: relative;
+    background-color: #dbd8e3;
+    -webkit-box-shadow: none;
   }
   .social-media-item{
     flex:100%;
