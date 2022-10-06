@@ -13,6 +13,7 @@ import { MainComponent } from './main/main.component';
 import { SiteModeComponent } from './site-mode/site-mode.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatTabsModule,
     NgbModule,
     MatSlideToggleModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
