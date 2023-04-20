@@ -9,7 +9,7 @@
         <div class="absolute top-0 bottom-0 w-full overflow-y-scroll scroll-smooth website-main-inner-wrap">
           <div class="">
 
-            <section class="relative flex flex-wrap items-center justify-center w-full h-auto home-section" id="home">
+            <section class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen home-section" id="home">
               <div class="w-full h-full px-8 xl:px-12 py-36">
                 <!-- <p>Hi,</p><br>
 								<p>I'm Mihir Rane,</p><br>
@@ -29,7 +29,7 @@
               <!-- <h1 class="bn-title typing" id="typing"><span class="cursor"></span></h1> -->
             </section>
 
-            <section class="relative flex flex-wrap items-center justify-center w-full h-auto about-section" id="about">
+            <section class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen about-section" id="about">
               <div class="w-full xl:w-3/5 h-full px-8 py-12 xl:py-36">
                 <p class="text-2xl">About</p>
                 <h2 class="text-4xl font-bold mb-8">Me</h2>
@@ -45,7 +45,7 @@
               </div>
             </section>
 
-            <section class="relative flex flex-wrap items-center justify-center w-full h-auto experience-section" id="experience">
+            <section class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen experience-section" id="experience">
               <div class="w-full h-full px-8 py-36">
                 <p class="text-2xl">Experience</p>
                 <h2 class="text-4xl font-bold mb-8">Where I've worked</h2>
@@ -106,7 +106,7 @@
               </div>
             </section>
 
-            <section class="relative flex flex-wrap items-center justify-center w-full h-auto project-section" id="projects">
+            <section class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen project-section" id="projects">
               <div class="w-full h-full px-8 py-36">
                 <p class="text-2xl">Projects</p>
                 <h2 class="text-4xl font-bold mb-8">What I have worked on</h2>
@@ -129,21 +129,21 @@
               </div>
             </section>
 
-            <section class="relative flex flex-wrap items-center justify-center w-full h-auto skills-section" id="skills">
+            <section class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen skills-section" id="skills">
               <div class="w-full h-full px-8 py-36">
                 <p class="text-2xl">Skills</p>
                 <h2 class="text-4xl font-bold mb-8">What I bring to the table</h2>
               </div>
             </section>
 
-            <section class="relative flex flex-wrap items-center justify-center w-full h-auto git-section" id="contact">
+            <section class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen git-section" id="contact">
               <div class="w-full h-full px-8 py-36">
                 <p class="text-2xl">Contact</p>
                 <h2 class="text-4xl font-bold mb-8">Get in touch</h2>
               </div>
             </section>
 
-            <section class="text-lg font-medium text-center subpixel-antialiased text-dark-color dark:text-light-color mb-20">Developed by <span class="font-bold">Mihir Rane</span></section>
+            <section class="text-lg font-medium text-center subpixel-antialiased text-dark-color dark:text-light-color mb-20 xl:hidden">Developed by <span class="font-bold">Mihir Rane</span></section>
 
           </div>
         </div>
@@ -151,7 +151,7 @@
       </main>
     </div>
     <div class="col-xl-1 no-padd relative bg-light-color text-dark-color dark:bg-dark-color dark:text-light-color">
-      <div class="main-header main-header-phone drop-shadow-md backdrop-blur fixed top-0 left-0 xl:hidden">
+      <div class="main-header main-header-phone drop-shadow-md backdrop-blur fixed top-0 left-0 xl:hidden z-10">
         <div class="header-logo-wrap">
             <div class="header-logo-inner-wrap">
                 <a href="https://ranemihirk.com/">
@@ -160,7 +160,7 @@
             </div>
         </div>
       </div>
-      <div class="flex justify-center items-end h-auto w-full fixed bottom-0 left-0 z-1">
+      <div class="flex justify-center items-end h-auto w-full fixed xl:absolute bottom-0 left-0 z-10">
         <div class="social-media-wrap flex flex-wrap h-fit w-full backdrop-blur xl:mb-32">
           <div class="text-center py-2 my-2 xl:my-0 w-1/5 xl:w-full">
             <a href="https://github.com/ranemihirk" target="_blank">
@@ -212,6 +212,13 @@
           </div>
         </div>
       </div>
+      <a class="scroll-top-arrow w-auto xl:w-full fixed bottom-20 right-4 xl:absolute xl:bottom-10 z-10" href="#home">
+        <svg class="h-8 xl:h-6 m-auto" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+        </svg>
+    </a>
     </div>
   </div>
 </div>
