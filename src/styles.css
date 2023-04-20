@@ -1,4 +1,6 @@
-
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 /* You can add global styles to this file, and also import other style files */
 
 html{
@@ -30,8 +32,8 @@ canvas {display: block; z-index: -1; height: 100vh; width: 100vw; position: fixe
 @import '~bootstrap/scss/bootstrap';
 
 html, body { height: 100%; }
-body { 
-    margin: 0; 
+body {
+    margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     background: var(--bkg-color);
  }
@@ -86,7 +88,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
-@media (max-width:300px)  { 
+@media (max-width:300px)  {
     /* fold devices */
     .global-time{
         flex: 100%;
@@ -96,7 +98,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
 @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { 
+@media (min-width:641px)  {
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
     .global-time{
         flex: 33.33%;
@@ -106,8 +108,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { 
-    /* hi-res laptops and desktops */ 
+@media (min-width:1281px) {
+    /* hi-res laptops and desktops */
     .global-time{
         flex: 20%;
         max-width: 20%;
