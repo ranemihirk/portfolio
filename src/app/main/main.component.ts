@@ -75,6 +75,11 @@ export class MainComponent implements OnInit {
   backEnd = ["Node js", "Laravel", "PHP", "ASP.NET C#", "MySQL", "MySQL Workbench", "Rest API", "AJAX"]
   tools = ["Git", "GitHub", "Sourcetree", "Jira", "VS Code", "Trello", "Zeplin"]
 
+  openTab = 1;
+  toggleTabs($tabNumber: number){
+    this.openTab = $tabNumber;
+  }
+
   // {img: "../../assets/images/javascript-calculator.png",
   //   url: "https://codepen.io/ranemihirk/full/MWGwrza",
   // title: "",
