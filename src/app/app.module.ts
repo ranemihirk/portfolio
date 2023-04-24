@@ -14,6 +14,7 @@ import { SiteModeComponent } from './site-mode/site-mode.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     FooterComponent,
     TimeComponent,
     MainComponent,
-    SiteModeComponent
+    SiteModeComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

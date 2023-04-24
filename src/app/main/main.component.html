@@ -10,151 +10,6 @@
                     <div class="">
 
                         <section
-                            class="relative flex hidden flex-wrap items-center justify-center w-full h-auto xl:h-screen temp-section">
-                            <div class="w-full h-full px-8 py-36">
-                                <div class="flex flex-wrap">
-                                    <div class="w-full">
-                                        <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
-                                            <li
-                                                class="-mb-px mr-2 last:mr-0 flex-auto text-center rounded border border-dark-color dark:border-light-color">
-                                                <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg block leading-normal"
-                                                    (click)="toggleTabs(1)"
-                                                    [ngClass]="{'text-dark-color dark:text-light-color bg-light-color dark:bg-dark-color': openTab !== 1, 'text-light-color dark:text-dark-color bg-dark-color dark:bg-light-color': openTab === 1}">
-                                                    Vidtu Ltd
-                                                </a>
-                                            </li>
-                                            <li
-                                                class="-mb-px mr-2 last:mr-0 flex-auto text-center rounded border border-dark-color dark:border-light-color">
-                                                <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg block leading-normal"
-                                                    (click)="toggleTabs(2)"
-                                                    [ngClass]="{'text-dark-color dark:text-light-color bg-light-color dark:bg-dark-color': openTab !== 2, 'text-light-color dark:text-dark-color bg-dark-color dark:bg-light-color': openTab === 2}">
-                                                    Crimson Interactive
-                                                </a>
-                                            </li>
-                                            <li
-                                                class="-mb-px mr-2 last:mr-0 flex-auto text-center rounded border border-dark-color dark:border-light-color">
-                                                <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg block leading-normal"
-                                                    (click)="toggleTabs(3)"
-                                                    [ngClass]="{'text-dark-color dark:text-light-color bg-light-color dark:bg-dark-color': openTab !== 3, 'text-light-color dark:text-dark-color bg-dark-color dark:bg-light-color': openTab === 3}">
-                                                    Anjita IT Solutions
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div
-                                            class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded">
-                                            <div class="px-4 py-5 flex-auto">
-                                                <div class="tab-content tab-space">
-                                                    <div [ngClass]="{'hidden': openTab !== 1, 'block': openTab === 1}">
-                                                        <div class="p-3.5 text-dark-color dark:text-light-color">
-                                                            <h2
-                                                                class="text-4xl mb-2 text-dark-color dark:text-light-color">
-                                                                Web
-                                                                Developer <a
-                                                                    class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color"
-                                                                    href="https://www.vidtu.com/" target="_blank">@
-                                                                    Vidtu Ltd.</a></h2>
-                                                            <p
-                                                                class="font-medium text-dark-color dark:text-light-color">
-                                                                January 2022 -
-                                                                Present</p>
-                                                            <ul class="list-disc">
-                                                                <li class="my-2 text-sm">Worked on developing the
-                                                                    virtual background
-                                                                    feature for the video calls
-                                                                    using "MediaPipe Selfie Segmentation" module by
-                                                                    Google.</li>
-                                                                <li class="my-2 text-sm">Also developed the Whiteboard
-                                                                    with multiple
-                                                                    tools like pen, spray,
-                                                                    eraser,etc. Addition Whiteboard feature to draw on
-                                                                    the current
-                                                                    screenshare.</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div [ngClass]="{'hidden': openTab !== 2, 'block': openTab === 2}">
-                                                        <div class="p-3.5">
-                                                            <h2
-                                                                class="text-4xl mb-2 text-dark-color dark:text-light-color">
-                                                                Web
-                                                                Developer <a
-                                                                    class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color"
-                                                                    href="https://www.crimsoni.com/" target="_blank">@
-                                                                    Crimson
-                                                                    Interactive.</a></h2>
-                                                            <p
-                                                                class="font-medium text-dark-color dark:text-light-color">
-                                                                April 2021 -
-                                                                January 2022</p>
-                                                            <ul class="list-disc">
-                                                                <li class="my-2 text-sm">Trinka.ai - Platform to correct
-                                                                    grammatical
-                                                                    mistakes in real
-                                                                    time. Also the browser extension for Chrome, Firefox
-                                                                    and
-                                                                    Edge.
-                                                                </li>
-                                                                <li class="my-2 text-sm">Journal Finder Report - It is
-                                                                    an internal
-                                                                    company integration
-                                                                    in Trinka AI which displays similar articles from
-                                                                    various
-                                                                    journals based on the abstract provided.
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div [ngClass]="{'hidden': openTab !== 3, 'block': openTab === 3}">
-                                                        <div class="p-3.5">
-                                                            <h2
-                                                                class="text-4xl mb-2 text-dark-color dark:text-light-color">
-                                                                Web
-                                                                Developer <a
-                                                                    class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color"
-                                                                    href="https://www.anjitait.com/" target="_blank">@
-                                                                    Anjita IT
-                                                                    Solutions.</a></h2>
-                                                            <p
-                                                                class="font-medium text-dark-color dark:text-light-color">
-                                                                July 2019 -
-                                                                April 2021</p>
-                                                            <ul class="list-disc">
-                                                                <li class="my-2 text-sm">Standardized HTML and CSS
-                                                                    workflow with section
-                                                                    wise
-                                                                    development and class naming convention. Converting
-                                                                    a PSD
-                                                                    file to HTML layout.</li>
-                                                                <li class="my-2 text-sm">Planned and developed an
-                                                                    complete e-commerce
-                                                                    website and
-                                                                    catalogue website.
-                                                                </li>
-                                                                <li class="my-2 text-sm">Revamped the inventory
-                                                                    management system for an
-                                                                    ecommerce website.
-                                                                </li>
-                                                                <li class="my-2 text-sm">Proficient in CSS transitions,
-                                                                    animations and
-                                                                    JavaScript DOM
-                                                                    manipulation</li>
-                                                                <li class="my-2 text-sm">Developed a PWA which utilizes
-                                                                    browsers local
-                                                                    storage and
-                                                                    can be used in poor network conditions.
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section
                             class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen home-section"
                             id="home">
                             <div class="w-full h-full px-8 xl:px-12 py-36">
@@ -424,7 +279,7 @@
                             </div>
                         </section>
 
-                        <section
+                        <!-- <section
                             class="hidden relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen project-section"
                             id="projects">
                             <div class="w-full h-full px-8 py-36">
@@ -449,7 +304,7 @@
                                     </ngx-slick-carousel>
                                 </div>
                             </div>
-                        </section>
+                        </section> -->
 
                         <section
                             class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen skills-section"

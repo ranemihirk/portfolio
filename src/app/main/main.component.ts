@@ -81,6 +81,7 @@ export class MainComponent implements OnInit {
   }
 
   scrollTo($sectionName: string) {
+    window.location.href = '/';
     Document.bind(document.getElementById($sectionName)?.scrollIntoView());
   }
 
