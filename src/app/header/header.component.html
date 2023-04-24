@@ -7,11 +7,11 @@
     <div class="h-4/6 grow self-end">
       <div class="flex flex-wrap items-end h-full">
         <ul class="p-0 w-full">
-          <li class="h-12 w-full"><a href="#about" class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">About Me</a></li>
-          <li class="h-12 w-full"><a href="#experience" class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">Experience</a></li>
-          <li class="h-12 w-full hidden"><a href="#projects" class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">Projects</a></li>
-          <li class="h-12 w-full"><a href="#skills" class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">Skills</a></li>
-          <li class="h-12 w-full"><a href="#contact" class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">Get in Touch</a></li>
+          <li class="h-12 w-full"><a (click)="scrollTo('about')" class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">About Me</a></li>
+          <li class="h-12 w-full"><a (click)="scrollTo('experience')" class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">Experience</a></li>
+          <li class="h-12 w-full hidden"><a (click)="scrollTo('projects')" class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">Projects</a></li>
+          <li class="h-12 w-full"><a (click)="scrollTo('skills')" class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">Skills</a></li>
+          <li class="h-12 w-full"><a (click)="scrollTo('contact')" class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">Get in Touch</a></li>
         </ul>
         <div class="py-5 w-full">
           <p class="text-center text-dark-color dark:text-light-color">Developed By</p>

@@ -80,6 +80,10 @@ export class MainComponent implements OnInit {
     this.openTab = $tabNumber;
   }
 
+  scrollTo($sectionName: string) {
+    Document.bind(document.getElementById($sectionName)?.scrollIntoView());
+  }
+
   // {img: "../../assets/images/javascript-calculator.png",
   //   url: "https://codepen.io/ranemihirk/full/MWGwrza",
   // title: "",
