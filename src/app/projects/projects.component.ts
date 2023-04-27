@@ -64,6 +64,9 @@ export class ProjectsComponent implements OnInit {
   ];
 
   scrollTo($sectionName: string) {
+    if($sectionName != "project"){
+      window.location.href = '/';
+    }
     Document.bind(document.getElementById($sectionName)?.scrollIntoView());
   }
 }
