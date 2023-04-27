@@ -14,6 +14,30 @@ export class ProjectsComponent implements OnInit {
 
   projects = [
     {
+      img: '../../assets/images/todo.png',
+      url: 'https://todo-list-ranemihirk.vercel.app/',
+      title: 'To Do List',
+      show: true,
+    },
+    {
+      img: '../../assets/images/dictionary.png',
+      url: 'https://dictionary-ranemihirk.vercel.app/',
+      title: 'Dictionary',
+      show: true,
+    },
+    {
+      img: '../../assets/images/tweetie.png',
+      url: 'https://tweetie-ranemihirk.vercel.app/',
+      title: 'Tweetie (Social Media Platform)',
+      show: true,
+    },
+    {
+      img: '../../assets/images/shreeji-sharan.png',
+      url: 'https://www.shreejisharan.com/',
+      title: 'Shreeji Sharan Group of Companies',
+      show: true,
+    },
+    {
       img: '../../assets/images/random-quote-generator.png',
       url: 'https://codepen.io/ranemihirk/full/QWrwpde',
       title: 'Random Quote Generator',
@@ -35,12 +59,6 @@ export class ProjectsComponent implements OnInit {
       img: '../../assets/images/javascript-calculator.png',
       url: 'https://codepen.io/ranemihirk/full/bGMdamJ',
       title: 'Javascript Calculator',
-      show: true,
-    },
-    {
-      img: '../../assets/images/shreeji-sharan.png',
-      url: 'https://www.shreejisharan.com/',
-      title: 'Shreeji Sharan Group of Companies',
       show: true,
     },
   ];
