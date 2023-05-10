@@ -14,6 +14,12 @@ export class ProjectsComponent implements OnInit {
 
   projects = [
     {
+      img: '../../assets/images/spotify.png',
+      url: 'https://spotify-ranemihirk.vercel.app/',
+      title: 'Spotify Replica',
+      show: true,
+    },
+    {
       img: '../../assets/images/todo.png',
       url: 'https://todo-list-ranemihirk.vercel.app/',
       title: 'To Do List',
