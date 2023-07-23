@@ -14,6 +14,12 @@ export class ProjectsComponent implements OnInit {
 
   projects = [
     {
+      img: '../../assets/images/dynamic-carousel.png',
+      url: 'https://codepen.io/ranemihirk/full/bGQjOQM',
+      title: 'Dynamic Carousel',
+      show: true,
+    },
+    {
       img: '../../assets/images/spotify.png',
       url: 'https://spotify-ranemihirk.vercel.app/',
       title: 'Spotify Replica',
