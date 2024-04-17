@@ -1,0 +1,8 @@
+.header-outline {
+  border-image: linear-gradient(#fff, #000) 30;
+}
+@media (prefers-color-scheme: dark) {
+  .header-outline {
+    border-image: linear-gradient(#000, #fff) 30;
+  }
+}
