@@ -7,11 +7,14 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent implements OnInit {
+  isDarkMode = false;
   constructor(private titleService: Title) {
     this.titleService.setTitle('Mihir Rane');
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
 
   slides = [
     {
@@ -83,6 +86,10 @@ export class MainComponent implements OnInit {
   scrollTo($sectionName: string) {
     // window.location.href = '/';
     Document.bind(document.getElementById($sectionName)?.scrollIntoView());
+  }
+
+  onChange() {
+    this.isDarkMode = !this.isDarkMode; // Update the isChecked variable
   }
 
   // {img: "../../assets/images/javascript-calculator.png",

@@ -15,6 +15,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ProjectsComponent } from './projects/projects.component';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ProjectsComponent } from './projects/projects.component';
     NgbModule,
     MatSlideToggleModule,
     FontAwesomeModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
