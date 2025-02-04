@@ -56,3 +56,21 @@
     font-size: 10px;
     letter-spacing: 0.5rem;
   }
+
+  .progress {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: rgb(195, 33, 72);
+    bottom: 0px;
+    transform: scaleX(0);
+  }
+
+  section {
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
