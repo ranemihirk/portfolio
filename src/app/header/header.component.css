@@ -6,3 +6,11 @@
     border-image: linear-gradient(#000, #fff) 30;
   }
 }
+
+.progress {
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  width: 100%;
+}

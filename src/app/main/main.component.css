@@ -143,3 +143,10 @@ html{
     -webkit-box-shadow: none;
   }
 }
+.progress-reverse {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0;
+  width: 100%;
+}

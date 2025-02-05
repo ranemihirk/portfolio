@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { animate, scroll } from 'motion';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,6 +12,10 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.href = this.router.url;
+    scroll(animate('.progress', 
+      { height: ['0%', '100%'] }, 
+      { ease: 'linear' }
+    ));
   }
 
   scrollTo($sectionName: string) {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-
+import { animate, scroll } from 'motion';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -14,6 +14,10 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     this.isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    scroll(animate('.progress-reverse', 
+      { height: ['0%', '100%'] }, 
+      { ease: 'linear' }
+    ));
   }
 
   slides = [

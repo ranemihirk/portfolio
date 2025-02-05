@@ -1,32 +1,61 @@
 <aside
-  class="header-outline flex flex-wrap flex-column justify-center h-screen w-full py-2 bg-light-color text-dark-color dark:bg-dark-color dark:text-light-color hidden xl:block border-4 border-solid"
-  >
-  <div class="p-2 border-[15px] border-solid mx-4" style="border-image: linear-gradient(#000, #fff) 30;">
-    <a href="/">
-      <img src="../../assets/images/logo.png" alt="" class="bg-light-color aspect-square">
-    </a>
-  </div>
-  <div class="h-4/6 grow self-end">
-    <div class="flex flex-wrap items-end h-full">
-      <ul class="p-0 w-full">
-        <li class="h-12 w-full"><a (click)="scrollTo('about')"
-            class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">About
-            Me</a></li>
-        <li class="h-12 w-full"><a (click)="scrollTo('experience')"
-            class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">Experience</a>
-        </li>
-        <!-- <li class="h-12 w-full"><a href="/projects" class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">Projects</a></li> -->
-        <li class="h-12 w-full"><a (click)="scrollTo('skills')"
-            class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">Skills</a>
-        </li>
-        <li class="h-12 w-full"><a (click)="scrollTo('contact')"
-            class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">Get
-            in Touch</a></li>
-      </ul>
-      <div class="py-5 w-full">
-        <p class="text-center text-dark-color dark:text-light-color">Developed By</p>
-        <h3 class="text-lg font-medium text-center subpixel-antialiased text-dark-color dark:text-light-color">Mihir
-          Rane</h3>
+  class="sticky top-0 left-0 header-outline relative flex flex-wrap flex-column justify-center h-screen w-full hidden xl:block border-4 border-solid"
+>
+  <div class="z-10 progress bg-dark-color dark:bg-light-color"></div>
+  <div class="z-20 absolute top-0 left-0 size-full text-gray-color">
+    <div
+      class="border-[15px] border-solid m-4"
+      style="border-image: linear-gradient(#000, #fff) 30"
+    >
+      <a href="/">
+        <img
+          src="../../assets/images/logo.png"
+          alt=""
+          class="bg-light-color aspect-square"
+        />
+      </a>
+    </div>
+    <div class="h-4/6 grow self-end">
+      <div class="flex flex-wrap items-end h-full">
+        <ul class="p-0 w-full font-black">
+          <li class="h-12 w-full">
+            <a
+              (click)="scrollTo('about')"
+              class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color"
+              >About Me</a
+            >
+          </li>
+          <li class="h-12 w-full">
+            <a
+              (click)="scrollTo('experience')"
+              class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color"
+              >Experience</a
+            >
+          </li>
+          <!-- <li class="h-12 w-full"><a href="/projects" class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color">Projects</a></li> -->
+          <li class="h-12 w-full">
+            <a
+              (click)="scrollTo('skills')"
+              class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color"
+              >Skills</a
+            >
+          </li>
+          <li class="h-12 w-full">
+            <a
+              (click)="scrollTo('contact')"
+              class="flex justify-center items-center h-full w-full transition duration-150 ease-in-out cursor-pointer hover:bg-dark-color hover:text-light-color hover:dark:bg-light-color hover:dark:text-dark-color"
+              >Get in Touch</a
+            >
+          </li>
+        </ul>
+        <div class="py-5 w-full font-black">
+          <p class="text-center text-gray-color">Developed By</p>
+          <h3
+            class="text-lg font-medium text-center text-gray-color subpixel-antialiased"
+          >
+            Mihir Rane
+          </h3>
+        </div>
       </div>
     </div>
   </div>

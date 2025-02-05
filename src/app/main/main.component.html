@@ -1,288 +1,421 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-xl-2 no-padd" [ngClass]="{'dark': isDarkMode,'': !isDarkMode}">
-            <app-header></app-header>
-        </div>
-        <div class="col-xl-9 no-padd" [ngClass]="{'dark': !isDarkMode, '': isDarkMode}">
-            <main
-                class="relative h-screen overflow-hidden bg-light-color text-dark-color dark:bg-dark-color dark:text-light-color">
-
-                <div class="absolute top-0 bottom-0 w-full overflow-y-scroll scroll-smooth website-main-inner-wrap">
-                    <div class="">
-
-                        <section
-                            class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen home-section"
-                            id="home">
-                            <div class="w-full h-full px-8 xl:px-12 py-36">
-                                <!-- <p>Hi,</p><br>
+<div class="container-fluid" [ngClass]="{ dark: !isDarkMode, '': isDarkMode }">
+  <div class="row">
+    <div class="col-xl-2 no-padd bg-light-color dark:bg-dark-color">
+      <app-header></app-header>
+    </div>
+    <div class="col-xl-9 no-padd">
+      <main
+        class="relative bg-light-color text-dark-color dark:bg-dark-color dark:text-light-color"
+      >
+        <div class="w-full scroll-smooth website-main-inner-wrap">
+          <div class="">
+            <section
+              class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen home-section"
+              id="home"
+            >
+              <div class="w-full h-full px-8 xl:px-12 py-36">
+                <!-- <p>Hi,</p><br>
 								<p>I'm Mihir Rane,</p><br>
 								<p>Web Developer.</p> -->
-                                <p class="text-2xl text-dark-color dark:text-light-color" data-aos="fade-up">Hi, My name
-                                    is</p>
-                                <h2 class="text-4xl font-bold mb-8 text-dark-color dark:text-light-color"
-                                    data-aos="fade-up">Mihir Rane,
-                                    <br /> Web Developer
-                                </h2>
-                                <div class="" data-aos="fade-up">
-                                    <!-- <h3>Web Developer</h3> -->
-                                    <p class="mb-4 text-dark-color dark:text-light-color">I'm a web developer
-                                        specializing in frontend development. Currently I'm working
-                                        at <a class="font-semibold hover:no-underline hover:text-dark-color"
-                                            href="https://www.vidtu.com/">Vidtu</a> as a Web
-                                        Developer. I love solving problems and following best practices.</p>
-                                </div>
-                            </div>
-                            <div class="top-section-arrow">
-                                <!-- <FontAwesomeIcon icon="fa-solid fa-angle-down" /> -->
-                            </div>
-                            <!-- <h1 class="bn-title typing" id="typing"><span class="cursor"></span></h1> -->
-                        </section>
+                <p
+                  class="text-2xl text-dark-color dark:text-light-color"
+                  data-aos="fade-up"
+                >
+                  Hi, My name is
+                </p>
+                <h2
+                  class="text-4xl font-bold mb-8 text-dark-color dark:text-light-color"
+                  data-aos="fade-up"
+                >
+                  Mihir Rane, <br />
+                  Web Developer
+                </h2>
+                <div class="" data-aos="fade-up">
+                  <!-- <h3>Web Developer</h3> -->
+                  <p class="mb-4 text-dark-color dark:text-light-color">
+                    I'm a web developer specializing in frontend development.
+                    Currently I'm working at
+                    <a
+                      class="font-semibold hover:no-underline hover:text-dark-color"
+                      href="https://www.vidtu.com/"
+                      >Vidtu</a
+                    >
+                    as a Web Developer. I love solving problems and following
+                    best practices.
+                  </p>
+                </div>
+              </div>
+              <div class="top-section-arrow">
+                <!-- <FontAwesomeIcon icon="fa-solid fa-angle-down" /> -->
+              </div>
+              <!-- <h1 class="bn-title typing" id="typing"><span class="cursor"></span></h1> -->
+            </section>
 
-                        <section
-                            class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen about-section"
-                            id="about">
-                            <div class="w-full xl:w-3/5 h-full px-8 py-12 xl:py-36">
-                                <p class="text-2xl text-dark-color dark:text-light-color">About</p>
-                                <h2 class="text-4xl font-bold mb-8 text-dark-color dark:text-light-color">Me</h2>
-                                <div class="">
-                                    <p class="mb-4 text-dark-color dark:text-light-color">Passionate web developer with
-                                        experience in developing responsive and dynamic web
-                                        applications.
-                                        Specializing in frontend development. A quick learner and a creative problem
-                                        solver.</p>
-                                </div>
-                            </div>
-                            <div class="w-full xl:w-2/5 px-12">
-                                <img class="rounded-tr-3xl rounded-bl-3xl" src="../../assets/images/profile.png" alt="">
-                            </div>
-                        </section>
+            <section
+              class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen about-section"
+              id="about"
+            >
+              <div class="w-full xl:w-3/5 h-full px-8 py-12 xl:py-36">
+                <p class="text-2xl text-dark-color dark:text-light-color">
+                  About
+                </p>
+                <h2
+                  class="text-4xl font-bold mb-8 text-dark-color dark:text-light-color"
+                >
+                  Me
+                </h2>
+                <div class="">
+                  <p class="mb-4 text-dark-color dark:text-light-color">
+                    Passionate web developer with experience in developing
+                    responsive and dynamic web applications. Specializing in
+                    frontend development. A quick learner and a creative problem
+                    solver.
+                  </p>
+                </div>
+              </div>
+              <div class="w-full xl:w-2/5 px-12">
+                <img
+                  class="rounded-tr-3xl rounded-bl-3xl"
+                  src="../../assets/images/profile.png"
+                  alt=""
+                />
+              </div>
+            </section>
 
-                        <section
-                            class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen experience-section"
-                            id="experience">
-                            <div class="w-full h-full px-8 py-36">
-                                <p class="text-2xl text-dark-color dark:text-light-color">Experience</p>
-                                <h2 class="text-4xl font-bold mb-8 text-dark-color dark:text-light-color">Where I've
-                                    worked</h2>
-                                <div class="flex flex-wrap">
-                                    <div class="w-full">
-                                        <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
-                                            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center cursor-pointer rounded p-1.5 delay-100"
-                                                [ngClass]="{'border border-dark-color dark:border-light-color': openTab === 1}">
-                                                <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg block leading-normal delay-100"
-                                                    (click)="toggleTabs(1)"
-                                                    [ngClass]="{'text-dark-color dark:text-light-color bg-light-color dark:bg-dark-color': openTab !== 1, 'text-light-color dark:text-dark-color bg-dark-color dark:bg-light-color': openTab === 1}">
-                                                    Vidtu Ltd
-                                                </a>
-                                            </li>
-                                            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center cursor-pointer rounded p-1.5 delay-100"
-                                                [ngClass]="{'border border-dark-color dark:border-light-color': openTab === 2}">
-                                                <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg block leading-normal delay-100"
-                                                    (click)="toggleTabs(2)"
-                                                    [ngClass]="{'text-dark-color dark:text-light-color bg-light-color dark:bg-dark-color': openTab !== 2, 'text-light-color dark:text-dark-color bg-dark-color dark:bg-light-color': openTab === 2}">
-                                                    Crimson Interactive
-                                                </a>
-                                            </li>
-                                            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center cursor-pointer rounded p-1.5 delay-100"
-                                                [ngClass]="{'border border-dark-color dark:border-light-color': openTab === 3}">
-                                                <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg block leading-normal delay-100"
-                                                    (click)="toggleTabs(3)"
-                                                    [ngClass]="{'text-dark-color dark:text-light-color bg-light-color dark:bg-dark-color': openTab !== 3, 'text-light-color dark:text-dark-color bg-dark-color dark:bg-light-color': openTab === 3}">
-                                                    Anjita IT Solutions
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div
-                                            class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-3xl">
-                                            <div class="px-4 py-5 flex-auto">
-                                                <div class="tab-content tab-space">
-                                                    <div [ngClass]="{'hidden': openTab !== 1, 'block': openTab === 1}">
-                                                        <div class="p-3.5 text-dark-color dark:text-light-color">
-                                                            <h2
-                                                                class="text-4xl mb-2 text-dark-color dark:text-light-color">
-                                                                Web
-                                                                Developer <a
-                                                                    class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color"
-                                                                    href="https://www.vidtu.com/" target="_blank">@
-                                                                    Vidtu Ltd.</a></h2>
-                                                            <p
-                                                                class="font-medium text-dark-color dark:text-light-color">
-                                                                January 2022 -
-                                                                Present</p>
-                                                            <ul class="list-disc">
-                                                                <li class="my-2 text-sm">Worked on developing the
-                                                                    virtual background
-                                                                    feature for the video calls
-                                                                    using "MediaPipe Selfie Segmentation" module by
-                                                                    Google.</li>
-                                                                <li class="my-2 text-sm">Also developed the Whiteboard
-                                                                    with multiple
-                                                                    tools like pen, spray,
-                                                                    eraser,etc. Addition Whiteboard feature to draw on
-                                                                    the current
-                                                                    screenshare.</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div [ngClass]="{'hidden': openTab !== 2, 'block': openTab === 2}">
-                                                        <div class="p-3.5">
-                                                            <h2
-                                                                class="text-4xl mb-2 text-dark-color dark:text-light-color">
-                                                                Web
-                                                                Developer <a
-                                                                    class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color hover:shadow-md"
-                                                                    href="https://www.crimsoni.com/" target="_blank">@
-                                                                    Crimson
-                                                                    Interactive.</a></h2>
-                                                            <p
-                                                                class="font-medium text-dark-color dark:text-light-color">
-                                                                April 2021 -
-                                                                January 2022</p>
-                                                            <ul class="list-disc">
-                                                                <li class="my-2 text-sm">Trinka.ai - Platform to correct
-                                                                    grammatical
-                                                                    mistakes in real
-                                                                    time. Also the browser extension for Chrome, Firefox
-                                                                    and
-                                                                    Edge.
-                                                                </li>
-                                                                <li class="my-2 text-sm">Journal Finder Report - It is
-                                                                    an internal
-                                                                    company integration
-                                                                    in Trinka AI which displays similar articles from
-                                                                    various
-                                                                    journals based on the abstract provided.
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div [ngClass]="{'hidden': openTab !== 3, 'block': openTab === 3}">
-                                                        <div class="p-3.5">
-                                                            <h2
-                                                                class="text-4xl mb-2 text-dark-color dark:text-light-color">
-                                                                Web
-                                                                Developer <a
-                                                                    class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color hover:shadow-md"
-                                                                    href="https://www.anjitait.com/" target="_blank">@
-                                                                    Anjita IT
-                                                                    Solutions.</a></h2>
-                                                            <p
-                                                                class="font-medium text-dark-color dark:text-light-color">
-                                                                July 2019 -
-                                                                April 2021</p>
-                                                            <ul class="list-disc">
-                                                                <li class="my-2 text-sm">Standardized HTML and CSS
-                                                                    workflow with section
-                                                                    wise
-                                                                    development and class naming convention. Converting
-                                                                    a PSD
-                                                                    file to HTML layout.</li>
-                                                                <li class="my-2 text-sm">Planned and developed an
-                                                                    complete e-commerce
-                                                                    website and
-                                                                    catalogue website.
-                                                                </li>
-                                                                <li class="my-2 text-sm">Revamped the inventory
-                                                                    management system for an
-                                                                    ecommerce website.
-                                                                </li>
-                                                                <li class="my-2 text-sm">Proficient in CSS transitions,
-                                                                    animations and
-                                                                    JavaScript DOM
-                                                                    manipulation</li>
-                                                                <li class="my-2 text-sm">Developed a PWA which utilizes
-                                                                    browsers local
-                                                                    storage and
-                                                                    can be used in poor network conditions.
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Hidden Mat-Tab Section -->
-                                <mat-tab-group class="hidden section-main-tabs text-dark-color dark:text-light-color">
-                                    <mat-tab label="Vidtu Ltd">
-                                        <div class="p-3.5 text-dark-color dark:text-light-color">
-                                            <h2 class="text-4xl mb-2 text-dark-color dark:text-light-color">Web
-                                                Developer <a
-                                                    class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color hover:shadow-md"
-                                                    href="https://www.vidtu.com/" target="_blank">@ Vidtu Ltd.</a></h2>
-                                            <p class="font-medium text-dark-color dark:text-light-color">January 2022 -
-                                                Present</p>
-                                            <ul class="list-disc">
-                                                <li class="my-2 text-sm">Worked on developing the virtual background
-                                                    feature for the video calls
-                                                    using "MediaPipe Selfie Segmentation" module by Google.</li>
-                                                <li class="my-2 text-sm">Also developed the Whiteboard with multiple
-                                                    tools like pen, spray,
-                                                    eraser,etc. Addition Whiteboard feature to draw on the current
-                                                    screenshare.</li>
-                                            </ul>
-                                        </div>
-                                    </mat-tab>
-                                    <mat-tab label="Crimson Interactive">
-                                        <div class="p-3.5">
-                                            <h2 class="text-4xl mb-2 text-dark-color dark:text-light-color">Web
-                                                Developer <a
-                                                    class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color"
-                                                    href="https://www.crimsoni.com/" target="_blank">@ Crimson
-                                                    Interactive.</a></h2>
-                                            <p class="font-medium text-dark-color dark:text-light-color">April 2021 -
-                                                January 2022</p>
-                                            <ul class="list-disc">
-                                                <li class="my-2 text-sm">Trinka.ai - Platform to correct grammatical
-                                                    mistakes in real
-                                                    time. Also the browser extension for Chrome, Firefox and
-                                                    Edge.
-                                                </li>
-                                                <li class="my-2 text-sm">Journal Finder Report - It is an internal
-                                                    company integration
-                                                    in Trinka AI which displays similar articles from various
-                                                    journals based on the abstract provided.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </mat-tab>
-                                    <mat-tab label="Anjita IT Solutions">
-                                        <div class="p-3.5">
-                                            <h2 class="text-4xl mb-2 text-dark-color dark:text-light-color">Web
-                                                Developer <a
-                                                    class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color"
-                                                    href="https://www.anjitait.com/" target="_blank">@ Anjita IT
-                                                    Solutions.</a></h2>
-                                            <p class="font-medium text-dark-color dark:text-light-color">July 2019 -
-                                                April 2021</p>
-                                            <ul class="list-disc">
-                                                <li class="my-2 text-sm">Standardized HTML and CSS workflow with section
-                                                    wise
-                                                    development and class naming convention. Converting a PSD
-                                                    file to HTML layout.</li>
-                                                <li class="my-2 text-sm">Planned and developed an complete e-commerce
-                                                    website and
-                                                    catalogue website.
-                                                </li>
-                                                <li class="my-2 text-sm">Revamped the inventory management system for an
-                                                    ecommerce website.
-                                                </li>
-                                                <li class="my-2 text-sm">Proficient in CSS transitions, animations and
-                                                    JavaScript DOM
-                                                    manipulation</li>
-                                                <li class="my-2 text-sm">Developed a PWA which utilizes browsers local
-                                                    storage and
-                                                    can be used in poor network conditions.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </mat-tab>
-                                </mat-tab-group>
+            <section
+              class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen experience-section"
+              id="experience"
+            >
+              <div class="w-full h-full px-8 py-36">
+                <p class="text-2xl text-dark-color dark:text-light-color">
+                  Experience
+                </p>
+                <h2
+                  class="text-4xl font-bold mb-8 text-dark-color dark:text-light-color"
+                >
+                  Where I've worked
+                </h2>
+                <div class="flex flex-wrap">
+                  <div class="w-full">
+                    <ul
+                      class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
+                    >
+                      <li
+                        class="-mb-px mr-2 last:mr-0 flex-auto text-center cursor-pointer rounded p-1.5 delay-100"
+                        [ngClass]="{
+                          'border border-dark-color dark:border-light-color':
+                            openTab === 1
+                        }"
+                      >
+                        <a
+                          class="text-xs font-bold uppercase px-5 py-3 shadow-lg block leading-normal delay-100"
+                          (click)="toggleTabs(1)"
+                          [ngClass]="{
+                            'text-dark-color dark:text-light-color bg-light-color dark:bg-dark-color':
+                              openTab !== 1,
+                            'text-light-color dark:text-dark-color bg-dark-color dark:bg-light-color':
+                              openTab === 1
+                          }"
+                        >
+                          Vidtu Ltd
+                        </a>
+                      </li>
+                      <li
+                        class="-mb-px mr-2 last:mr-0 flex-auto text-center cursor-pointer rounded p-1.5 delay-100"
+                        [ngClass]="{
+                          'border border-dark-color dark:border-light-color':
+                            openTab === 2
+                        }"
+                      >
+                        <a
+                          class="text-xs font-bold uppercase px-5 py-3 shadow-lg block leading-normal delay-100"
+                          (click)="toggleTabs(2)"
+                          [ngClass]="{
+                            'text-dark-color dark:text-light-color bg-light-color dark:bg-dark-color':
+                              openTab !== 2,
+                            'text-light-color dark:text-dark-color bg-dark-color dark:bg-light-color':
+                              openTab === 2
+                          }"
+                        >
+                          Crimson Interactive
+                        </a>
+                      </li>
+                      <li
+                        class="-mb-px mr-2 last:mr-0 flex-auto text-center cursor-pointer rounded p-1.5 delay-100"
+                        [ngClass]="{
+                          'border border-dark-color dark:border-light-color':
+                            openTab === 3
+                        }"
+                      >
+                        <a
+                          class="text-xs font-bold uppercase px-5 py-3 shadow-lg block leading-normal delay-100"
+                          (click)="toggleTabs(3)"
+                          [ngClass]="{
+                            'text-dark-color dark:text-light-color bg-light-color dark:bg-dark-color':
+                              openTab !== 3,
+                            'text-light-color dark:text-dark-color bg-dark-color dark:bg-light-color':
+                              openTab === 3
+                          }"
+                        >
+                          Anjita IT Solutions
+                        </a>
+                      </li>
+                    </ul>
+                    <div
+                      class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-3xl"
+                    >
+                      <div class="px-4 py-5 flex-auto">
+                        <div class="tab-content tab-space">
+                          <div
+                            [ngClass]="{
+                              hidden: openTab !== 1,
+                              block: openTab === 1
+                            }"
+                          >
+                            <div
+                              class="p-3.5 text-dark-color dark:text-light-color"
+                            >
+                              <h2
+                                class="text-4xl mb-2 text-dark-color dark:text-light-color"
+                              >
+                                Web Developer
+                                <a
+                                  class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color"
+                                  href="https://www.vidtu.com/"
+                                  target="_blank"
+                                  >@ Vidtu Ltd.</a
+                                >
+                              </h2>
+                              <p
+                                class="font-medium text-dark-color dark:text-light-color"
+                              >
+                                January 2022 - Present
+                              </p>
+                              <ul class="list-disc">
+                                <li class="my-2 text-sm">
+                                  Worked on developing the virtual background
+                                  feature for the video calls using "MediaPipe
+                                  Selfie Segmentation" module by Google.
+                                </li>
+                                <li class="my-2 text-sm">
+                                  Also developed the Whiteboard with multiple
+                                  tools like pen, spray, eraser,etc. Addition
+                                  Whiteboard feature to draw on the current
+                                  screenshare.
+                                </li>
+                              </ul>
                             </div>
-                        </section>
+                          </div>
+                          <div
+                            [ngClass]="{
+                              hidden: openTab !== 2,
+                              block: openTab === 2
+                            }"
+                          >
+                            <div class="p-3.5">
+                              <h2
+                                class="text-4xl mb-2 text-dark-color dark:text-light-color"
+                              >
+                                Web Developer
+                                <a
+                                  class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color hover:shadow-md"
+                                  href="https://www.crimsoni.com/"
+                                  target="_blank"
+                                  >@ Crimson Interactive.</a
+                                >
+                              </h2>
+                              <p
+                                class="font-medium text-dark-color dark:text-light-color"
+                              >
+                                April 2021 - January 2022
+                              </p>
+                              <ul class="list-disc">
+                                <li class="my-2 text-sm">
+                                  Trinka.ai - Platform to correct grammatical
+                                  mistakes in real time. Also the browser
+                                  extension for Chrome, Firefox and Edge.
+                                </li>
+                                <li class="my-2 text-sm">
+                                  Journal Finder Report - It is an internal
+                                  company integration in Trinka AI which
+                                  displays similar articles from various
+                                  journals based on the abstract provided.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div
+                            [ngClass]="{
+                              hidden: openTab !== 3,
+                              block: openTab === 3
+                            }"
+                          >
+                            <div class="p-3.5">
+                              <h2
+                                class="text-4xl mb-2 text-dark-color dark:text-light-color"
+                              >
+                                Web Developer
+                                <a
+                                  class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color hover:shadow-md"
+                                  href="https://www.anjitait.com/"
+                                  target="_blank"
+                                  >@ Anjita IT Solutions.</a
+                                >
+                              </h2>
+                              <p
+                                class="font-medium text-dark-color dark:text-light-color"
+                              >
+                                July 2019 - April 2021
+                              </p>
+                              <ul class="list-disc">
+                                <li class="my-2 text-sm">
+                                  Standardized HTML and CSS workflow with
+                                  section wise development and class naming
+                                  convention. Converting a PSD file to HTML
+                                  layout.
+                                </li>
+                                <li class="my-2 text-sm">
+                                  Planned and developed an complete e-commerce
+                                  website and catalogue website.
+                                </li>
+                                <li class="my-2 text-sm">
+                                  Revamped the inventory management system for
+                                  an ecommerce website.
+                                </li>
+                                <li class="my-2 text-sm">
+                                  Proficient in CSS transitions, animations and
+                                  JavaScript DOM manipulation
+                                </li>
+                                <li class="my-2 text-sm">
+                                  Developed a PWA which utilizes browsers local
+                                  storage and can be used in poor network
+                                  conditions.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Hidden Mat-Tab Section -->
+                <mat-tab-group
+                  class="hidden section-main-tabs text-dark-color dark:text-light-color"
+                >
+                  <mat-tab label="Vidtu Ltd">
+                    <div class="p-3.5 text-dark-color dark:text-light-color">
+                      <h2
+                        class="text-4xl mb-2 text-dark-color dark:text-light-color"
+                      >
+                        Web Developer
+                        <a
+                          class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color hover:shadow-md"
+                          href="https://www.vidtu.com/"
+                          target="_blank"
+                          >@ Vidtu Ltd.</a
+                        >
+                      </h2>
+                      <p
+                        class="font-medium text-dark-color dark:text-light-color"
+                      >
+                        January 2022 - Present
+                      </p>
+                      <ul class="list-disc">
+                        <li class="my-2 text-sm">
+                          Worked on developing the virtual background feature
+                          for the video calls using "MediaPipe Selfie
+                          Segmentation" module by Google.
+                        </li>
+                        <li class="my-2 text-sm">
+                          Also developed the Whiteboard with multiple tools like
+                          pen, spray, eraser,etc. Addition Whiteboard feature to
+                          draw on the current screenshare.
+                        </li>
+                      </ul>
+                    </div>
+                  </mat-tab>
+                  <mat-tab label="Crimson Interactive">
+                    <div class="p-3.5">
+                      <h2
+                        class="text-4xl mb-2 text-dark-color dark:text-light-color"
+                      >
+                        Web Developer
+                        <a
+                          class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color"
+                          href="https://www.crimsoni.com/"
+                          target="_blank"
+                          >@ Crimson Interactive.</a
+                        >
+                      </h2>
+                      <p
+                        class="font-medium text-dark-color dark:text-light-color"
+                      >
+                        April 2021 - January 2022
+                      </p>
+                      <ul class="list-disc">
+                        <li class="my-2 text-sm">
+                          Trinka.ai - Platform to correct grammatical mistakes
+                          in real time. Also the browser extension for Chrome,
+                          Firefox and Edge.
+                        </li>
+                        <li class="my-2 text-sm">
+                          Journal Finder Report - It is an internal company
+                          integration in Trinka AI which displays similar
+                          articles from various journals based on the abstract
+                          provided.
+                        </li>
+                      </ul>
+                    </div>
+                  </mat-tab>
+                  <mat-tab label="Anjita IT Solutions">
+                    <div class="p-3.5">
+                      <h2
+                        class="text-4xl mb-2 text-dark-color dark:text-light-color"
+                      >
+                        Web Developer
+                        <a
+                          class="font-semibold text-dark-color dark:text-light-color hover:no-underline hover:text-dark-color"
+                          href="https://www.anjitait.com/"
+                          target="_blank"
+                          >@ Anjita IT Solutions.</a
+                        >
+                      </h2>
+                      <p
+                        class="font-medium text-dark-color dark:text-light-color"
+                      >
+                        July 2019 - April 2021
+                      </p>
+                      <ul class="list-disc">
+                        <li class="my-2 text-sm">
+                          Standardized HTML and CSS workflow with section wise
+                          development and class naming convention. Converting a
+                          PSD file to HTML layout.
+                        </li>
+                        <li class="my-2 text-sm">
+                          Planned and developed an complete e-commerce website
+                          and catalogue website.
+                        </li>
+                        <li class="my-2 text-sm">
+                          Revamped the inventory management system for an
+                          ecommerce website.
+                        </li>
+                        <li class="my-2 text-sm">
+                          Proficient in CSS transitions, animations and
+                          JavaScript DOM manipulation
+                        </li>
+                        <li class="my-2 text-sm">
+                          Developed a PWA which utilizes browsers local storage
+                          and can be used in poor network conditions.
+                        </li>
+                      </ul>
+                    </div>
+                  </mat-tab>
+                </mat-tab-group>
+              </div>
+            </section>
 
-                        <!-- <section
+            <!-- <section
                             class="hidden relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen project-section"
                             id="projects">
                             <div class="w-full h-full px-8 py-36">
@@ -309,199 +442,314 @@
                             </div>
                         </section> -->
 
-                        <section
-                            class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen skills-section"
-                            id="skills">
-                            <div class="w-full h-full px-8 py-36">
-                                <p class="text-2xl text-dark-color dark:text-light-color">Skills</p>
-                                <h2 class="text-4xl font-bold mb-8 text-dark-color dark:text-light-color">What I bring
-                                    to the table</h2>
-                                <div class="flex flex-wrap items-stretch">
-                                    <div class="w-full h-full xl:w-1/3 xl:max-w-1/3">
-                                        <h3 class="font-medium text-dark-color dark:text-light-color">Frontend</h3>
-                                        <div class="flex flex-wrap my-4">
-                                            <div class="m-2 px-4 py-1 border-[2px] border-solid rounded-lg cursor-pointer hover:dark:bg-light-color hover:dark:text-dark-color hover:bg-dark-color hover:text-light-color delay-150"
-                                                *ngFor="let current of frontEnd">
-                                                <span>{{current}}</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full xl:w-1/3 xl:max-w-1/3">
-                                        <h3 class="font-medium text-dark-color dark:text-light-color">Backend & Database
-                                        </h3>
-                                        <div class="flex flex-wrap my-4">
-                                            <div class="m-2 px-4 py-1 border-[2px] border-solid rounded-lg cursor-pointer hover:dark:bg-light-color hover:dark:text-dark-color hover:bg-dark-color hover:text-light-color delay-150"
-                                                *ngFor="let current of backEnd">
-                                                <span>{{current}}</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-full xl:w-1/3 xl:max-w-1/3">
-                                        <h3 class="font-medium text-dark-color dark:text-light-color">Tools</h3>
-                                        <div class="flex flex-wrap my-4">
-                                            <div class="m-2 px-4 py-1 border-[2px] border-solid rounded-lg cursor-pointer hover:dark:bg-light-color hover:dark:text-dark-color hover:bg-dark-color hover:text-light-color delay-150"
-                                                *ngFor="let current of tools">
-                                                <span>{{current}}</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section
-                            class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen git-section"
-                            id="contact">
-                            <div class="w-full h-full px-8 py-36">
-                                <p class="text-2xl text-dark-color dark:text-light-color">Contact</p>
-                                <h2 class="text-4xl font-bold mb-8 text-dark-color dark:text-light-color">Get in touch
-                                </h2>
-                            </div>
-                        </section>
-
-                        <section
-                            class="text-lg font-medium text-center subpixel-antialiased text-dark-color dark:text-light-color mb-20 xl:hidden text-dark-color dark:text-light-color">
-                            Developed by <span class="font-bold">Mihir Rane</span></section>
-
+            <section
+              class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen skills-section"
+              id="skills"
+            >
+              <div class="w-full h-full px-8 py-36">
+                <p class="text-2xl text-dark-color dark:text-light-color">
+                  Skills
+                </p>
+                <h2
+                  class="text-4xl font-bold mb-8 text-dark-color dark:text-light-color"
+                >
+                  What I bring to the table
+                </h2>
+                <div class="flex flex-wrap items-stretch">
+                  <div class="w-full h-full xl:w-1/3 xl:max-w-1/3">
+                    <h3
+                      class="font-medium text-dark-color dark:text-light-color"
+                    >
+                      Frontend
+                    </h3>
+                    <div class="flex flex-wrap my-4">
+                      <div
+                        class="m-2 px-4 py-1 border-[2px] border-solid rounded-lg cursor-pointer hover:dark:bg-light-color hover:dark:text-dark-color hover:bg-dark-color hover:text-light-color delay-150"
+                        *ngFor="let current of frontEnd"
+                      >
+                        <span>{{ current }}</span>
+                      </div>
                     </div>
+                  </div>
+                  <div class="w-full xl:w-1/3 xl:max-w-1/3">
+                    <h3
+                      class="font-medium text-dark-color dark:text-light-color"
+                    >
+                      Backend & Database
+                    </h3>
+                    <div class="flex flex-wrap my-4">
+                      <div
+                        class="m-2 px-4 py-1 border-[2px] border-solid rounded-lg cursor-pointer hover:dark:bg-light-color hover:dark:text-dark-color hover:bg-dark-color hover:text-light-color delay-150"
+                        *ngFor="let current of backEnd"
+                      >
+                        <span>{{ current }}</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full xl:w-1/3 xl:max-w-1/3">
+                    <h3
+                      class="font-medium text-dark-color dark:text-light-color"
+                    >
+                      Tools
+                    </h3>
+                    <div class="flex flex-wrap my-4">
+                      <div
+                        class="m-2 px-4 py-1 border-[2px] border-solid rounded-lg cursor-pointer hover:dark:bg-light-color hover:dark:text-dark-color hover:bg-dark-color hover:text-light-color delay-150"
+                        *ngFor="let current of tools"
+                      >
+                        <span>{{ current }}</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!-- <app-footer></app-footer> -->
-            </main>
+              </div>
+            </section>
+
+            <section
+              class="relative flex flex-wrap items-center justify-center w-full h-auto xl:h-screen git-section"
+              id="contact"
+            >
+              <div class="w-full h-full px-8 py-36">
+                <p class="text-2xl text-dark-color dark:text-light-color">
+                  Contact
+                </p>
+                <h2
+                  class="text-4xl font-bold mb-8 text-dark-color dark:text-light-color"
+                >
+                  Get in touch
+                </h2>
+              </div>
+            </section>
+
+            <section
+              class="text-lg font-medium text-center subpixel-antialiased text-dark-color dark:text-light-color mb-20 xl:hidden text-dark-color dark:text-light-color"
+            >
+              Developed by <span class="font-bold">Mihir Rane</span>
+            </section>
+          </div>
         </div>
-        <div class="col-xl-1 no-padd" [ngClass]="{'dark': !isDarkMode, '': isDarkMode}">
-            <div class="relative h-full bg-light-color text-dark-color dark:bg-dark-color dark:text-light-color">
-                <div class="main-header main-header-phone bg-dark-color/50 dark:bg-light-color/50 xl:bg-light-color xl:dark:bg-dark-color fixed top-0 left-0 right-0 z-10 xl:relative xl:bg-light-color dark:bg-dark-color"
-                    id="mobile-header">
-                    <div class="header-logo-wrap xl:hidden">
-                        <div class="header-logo-inner-wrap p-3" style="border-image: linear-gradient(#000, #fff) 30;">
-                            <a (click)="scrollTo('home')">
-                                <img src="../../assets/images/logo.png" alt=""
-                                    class="header-logo m-auto bg-light-color w-1/6 rounded-lg">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="flex justify-center xl:py-5 absolute top-0 bottom-0 right-2 xl:relative xl:right-0">
-                        <label class="swap">
-                            <input type="checkbox" [ngModel]="isDarkMode" (change)="onChange()"
-                                class="rounded-lg" />
-                            <!-- sun icon -->
-                            <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
-                            </svg>
-
-                            <!-- moon icon -->
-                            <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
-                            </svg>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="flex xl:flex-col items-center h-auto w-full fixed xl:absolute bottom-0 left-0 z-10">
-                    <div
-                        class="social-media-wrap flex flex-wrap justify-around xl:flex-col h-fit w-full xl:mb-20 items-center bg-dark-color/50 dark:bg-light-color/50 xl:bg-transparent xl:dark:bg-transparent">
-                        <div
-                            class="text-center p-2 my-2 xl:my-0 w-fit rounded-full bg-light-color dark:bg-dark-color fill-dark-color dark:fill-light-color hover:bg-dark-color hover:dark:bg-light-color hover:fill-light-color hover:dark:fill-dark-color delay-150">
-                            <a href="https://github.com/ranemihirk" target="_blank" class="fill-inherit">
-                                <svg class="h-6 m-auto fill-inherit" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 496 512">
-                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                    <path
-                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div
-                            class="text-center p-2 my-2 xl:my-0 w-fit rounded-full bg-light-color dark:bg-dark-color fill-dark-color dark:fill-light-color hover:bg-dark-color hover:dark:bg-light-color hover:fill-light-color hover:dark:fill-dark-color delay-150">
-                            <a href="https://www.instagram.com/ranemihirk/" target="_blank" class="fill-inherit">
-                                <svg class="h-6 m-auto fill-inherit" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512">
-                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                    <path
-                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div
-                            class="text-center p-2 my-2 xl:my-0 w-fit rounded-full bg-light-color dark:bg-dark-color fill-dark-color dark:fill-light-color hover:bg-dark-color hover:dark:bg-light-color hover:fill-light-color hover:dark:fill-dark-color delay-150">
-                            <a href="https://twitter.com/ranemihirk" target="_blank" class="fill-inherit">
-                                <svg class="h-6 m-auto fill-inherit" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512">
-                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                    <path
-                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
-                                </svg>
-                            </a>
-
-                        </div>
-                        <div
-                            class="text-center p-2 my-2 xl:my-0 w-fit rounded-full bg-light-color dark:bg-dark-color fill-dark-color dark:fill-light-color hover:bg-dark-color hover:dark:bg-light-color hover:fill-light-color hover:dark:fill-dark-color delay-150">
-                            <a href="https://www.linkedin.com/in/ranemihirk/" target="_blank" class="fill-inherit">
-                                <svg class="h-6 m-auto fill-inherit" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512">
-                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                    <path
-                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                                </svg>
-                            </a>
-
-                        </div>
-                        <div
-                            class="text-center p-2 my-2 xl:my-0 w-fit rounded-full bg-light-color dark:bg-dark-color fill-dark-color dark:fill-light-color hover:bg-dark-color hover:dark:bg-light-color hover:fill-light-color hover:dark:fill-dark-color delay-150">
-                            <a href="https://codepen.io/ranemihirk" target="_blank" class="fill-inherit">
-                                <svg class="h-6 m-auto fill-inherit" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512">
-                                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                    <path
-                                        d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z" />
-                                </svg>
-                            </a>
-
-                        </div>
-                    </div>
-                    <a class="scroll-top-arrow fixed xl:relative bottom-20 right-4 xl:bottom-auto xl:right-auto xl:mb-4 p-2 z-10 cursor-pointer w-fit rounded-full bg-dark-color dark:bg-light-color fill-light-color dark:fill-dark-color xl:bg-light-color xl:dark:bg-dark-color xl:fill-dark-color xl:dark:fill-light-color hover:bg-dark-color hover:dark:bg-light-color hover:fill-light-color hover:dark:fill-dark-color delay-150"
-                        (click)="scrollTo('home')">
-                        <svg class="h-8 xl:h-6 m-auto fill-inherit" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path
-                                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <!-- <app-footer></app-footer> -->
+      </main>
     </div>
+    <div class="col-xl-1 no-padd">
+      <div
+        class="sticky top-0 left-0 xl:h-screen w-full relative h-full bg-light-color text-dark-color dark:bg-dark-color dark:text-light-color"
+      >
+        <div class="z-10 sticky top-0 left-0 w-full h-screen hidden xl:block">
+          <div class="progress-reverse bg-dark-color dark:bg-light-color"></div>
+        </div>
+        <div class="z-20 absolute top-0 left-0 xl:size-full text-gray-color">
+          <div
+            class="main-header main-header-phone bg-dark-color/80 dark:bg-light-color/80 xl:bg-transparent xl:dark:bg-transparent xl:bg-light-color xl:dark:bg-dark-color fixed top-0 left-0 right-0 z-10 xl:relative xl:bg-light-color dark:bg-dark-color"
+            id="mobile-header"
+          >
+            <div class="header-logo-wrap xl:hidden">
+              <div
+                class="header-logo-inner-wrap p-3"
+                style="border-image: linear-gradient(#000, #fff) 30"
+              >
+                <a (click)="scrollTo('home')">
+                  <img
+                    src="../../assets/images/logo.png"
+                    alt=""
+                    class="header-logo m-auto bg-light-color w-[20vw] md:w-[10vw] rounded-lg"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex justify-center xl:py-5 absolute top-0 bottom-0 right-2 xl:relative xl:right-0"
+            >
+              <label class="swap">
+                <input
+                  type="checkbox"
+                  [ngModel]="isDarkMode"
+                  (change)="onChange()"
+                  class="rounded-lg"
+                />
+                <!-- sun icon -->
+                <svg
+                  class="swap-on fill-light-color xl:fill-gray-color w-10 h-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
+                  />
+                </svg>
+
+                <!-- moon icon -->
+                <svg
+                  class="swap-off fill-dark-color xl:fill-gray-color w-10 h-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
+                  />
+                </svg>
+              </label>
+            </div>
+          </div>
+
+          <div
+            class="flex xl:flex-col items-center h-auto w-full fixed xl:absolute bottom-0 left-0 z-10"
+          >
+            <div
+              class="social-media-wrap flex flex-wrap justify-around xl:flex-col h-fit w-full xl:mb-20 items-center bg-dark-color/80 dark:bg-light-color/80 xl:bg-transparent xl:dark:bg-transparent"
+            >
+              <div
+                class="text-center p-2 my-2 xl:my-0 w-fit rounded-full fill-light-color dark:fill-dark-color xl:fill-gray-color xl:dark:fill-gray-color hover:bg-dark-color hover:dark:bg-light-color hover:fill-light-color hover:dark:fill-dark-color delay-150"
+              >
+                <a
+                  href="https://github.com/ranemihirk"
+                  target="_blank"
+                  class="fill-inherit"
+                >
+                  <svg
+                    class="h-6 m-auto fill-inherit"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                  >
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="text-center p-2 my-2 xl:my-0 w-fit rounded-full fill-light-color dark:fill-dark-color xl:fill-gray-color xl:dark:fill-gray-color hover:bg-dark-color hover:dark:bg-light-color hover:fill-light-color hover:dark:fill-dark-color delay-150"
+              >
+                <a
+                  href="https://www.instagram.com/ranemihirk/"
+                  target="_blank"
+                  class="fill-inherit"
+                >
+                  <svg
+                    class="h-6 m-auto fill-inherit"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="text-center p-2 my-2 xl:my-0 w-fit rounded-full fill-light-color dark:fill-dark-color xl:fill-gray-color xl:dark:fill-gray-color hover:bg-dark-color hover:dark:bg-light-color hover:fill-light-color hover:dark:fill-dark-color delay-150"
+              >
+                <a
+                  href="https://twitter.com/ranemihirk"
+                  target="_blank"
+                  class="fill-inherit"
+                >
+                  <svg
+                    class="h-6 m-auto fill-inherit"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="text-center p-2 my-2 xl:my-0 w-fit rounded-full fill-light-color dark:fill-dark-color xl:fill-gray-color xl:dark:fill-gray-color hover:bg-dark-color hover:dark:bg-light-color hover:fill-light-color hover:dark:fill-dark-color delay-150"
+              >
+                <a
+                  href="https://www.linkedin.com/in/ranemihirk/"
+                  target="_blank"
+                  class="fill-inherit"
+                >
+                  <svg
+                    class="h-6 m-auto fill-inherit"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="text-center p-2 my-2 xl:my-0 w-fit rounded-full fill-light-color dark:fill-dark-color xl:fill-gray-color xl:dark:fill-gray-color hover:bg-dark-color hover:dark:bg-light-color hover:fill-light-color hover:dark:fill-dark-color delay-150"
+              >
+                <a
+                  href="https://codepen.io/ranemihirk"
+                  target="_blank"
+                  class="fill-inherit"
+                >
+                  <svg
+                    class="h-6 m-auto fill-inherit"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                      d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <a
+              class="scroll-top-arrow fixed xl:relative bottom-20 right-4 xl:bottom-auto xl:right-auto xl:mb-4 p-2 z-10 cursor-pointer w-fit rounded-full fill-dark-color dark:fill-light-color xl:fill-gray-color xl:dark:fill-gray-color hover:bg-dark-color hover:dark:bg-light-color hover:fill-light-color hover:dark:fill-dark-color delay-150"
+              (click)="scrollTo('home')"
+            >
+              <svg
+                class="h-8 xl:h-6 m-auto fill-inherit"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+  let slideIndex = 1;
+  showSlides(slideIndex);
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
 
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
 
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      slideIndex = 1;
     }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
 </script>
